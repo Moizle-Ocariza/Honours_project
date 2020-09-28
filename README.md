@@ -16,4 +16,14 @@ This document contains the amino acid sequences of the proteins found homologous
 
 ```16S``` and ```23S``` sequences were both taken from IMG and used for phylogenetic tree building.
 
+```NfxB_relatives.fasta``` contains the amino acid sequences of the NfxB homologues found.
 
+```Shuffled PAO1 intergenic region``` contains the shuffled sequences used as a control for PatScan.
+
+```PatScan_Raw_Results``` contains the raw motifs found using the different  query patterns.
+
+```FIMO_intergenic_scan``` contains the raw motifs found using the different query patterns.
+
+```Motifs from homologues``` contains raw motifs found in the Pseudomonas species.
+
+```Motifs.R``` contains the script used to process the raw motifs found using RSAT, SFM, and FIMO. 
