@@ -8,4 +8,4 @@ This document contains the amino acid sequences of the proteins found homologous
 
 ## Upstream sequences
 
-```1```
+```gene_species_upstream-NfxB-related.fasta``` contains the upstream sequences of the genes encoding the NfxB homologues found.
