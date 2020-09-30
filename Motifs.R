@@ -1,6 +1,9 @@
+## Written by M. Ocariza, 2020
+
 setwd("~/Documents/University/UNIVERSITY ACADEMIC/Fourth Year/Project/Bioinformatics/Results/Tidying up /Cut motifs/")
 
-directory <- "~/Documents/University/UNIVERSITY ACADEMIC/Fourth Year/Project/Bioinformatics/Results/Tidying up /Cut motifs/"
+directory <- "~/Documents/University/UNIVERSITY ACADEMIC/
+FourthYear/Project/Bioinformatics/Results/Tidying up /Cut motifs/"
 file_list <- list.files(path = ".", recursive = TRUE, pattern = "\\.txt$", full.names = TRUE)
 
 View(file_list)
@@ -82,37 +85,3 @@ IR2_fasta <- select(IR2, 1,4)
 library(seqRFLP)
 dataframe2fas(IR1_fasta, file = "IR1.fasta")
 dataframe2fas(IR2_fasta, file = "IR2.fasta")
-
-
-
-#Alignment
-if (!requireNamespace("BiocManager", quietly = TRUE))
-  install.packages("BiocManager")
-library(BiocManager)
-
-
-##BiocManager::install("msa")
-library(msa)
-
-#BiocManager::install("DECIPHER")
-library("DECIPHER")
-
-
-#Align IR1
-IR1_file <- file.path(directory, "IR1.fasta")
-IR1_alignment <- readDNAStringSet(IR1_file)
-IR1_alignment
-
-dna <- readDNAStringSet(IR1_file)
-msa(dna, method=c("ClustalW", "ClustalOmega", "Muscle"),
-    cluster="default", gapOpening="default", gapExtension="default", 
-    maxiters="default", substitutionMatrix="default", type="default", order=c("aligned", "input"), verbose=FALSE)
-
-
-msaClustalOmega(IR1_file_1, type = DNAStringset, order = TRUE)
-StaggerAlignment(IR1_alignment, tree = NULL, fullLength = TRUE, processors = NULL, verbose = TRUE)
-AdjustAlignment(IR1_alignment)
-
-##AlignStat Package - COMPARE ALIGNMENTS
-install.packages("AlignStat")
-
