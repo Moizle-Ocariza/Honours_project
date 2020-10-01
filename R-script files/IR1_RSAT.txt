@@ -1,0 +1,2 @@
+Locus	Start	Stop	matched_sequence
+nfxB_P_aeruginosa	-91	-76	TCAAATGATCTTTTGA
