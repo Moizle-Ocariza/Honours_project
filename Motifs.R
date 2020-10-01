@@ -1,9 +1,9 @@
 ## Written by M. Ocariza, 2020
 
-setwd("~/Documents/University/UNIVERSITY ACADEMIC/Fourth Year/Project/Bioinformatics/Results/Tidying up /Cut motifs/")
+#set directory
+setwd("~/Desktop/Honours_project_Tidying/Bioinformatics/Motif Scans/Upstream region scans/New_combined")
 
-directory <- "~/Documents/University/UNIVERSITY ACADEMIC/
-FourthYear/Project/Bioinformatics/Results/Tidying up /Cut motifs/"
+directory <- "~/Documents/University/UNIVERSITY ACADEMIC/Fourth Year/Project/Bioinformatics/Results/Tidying up /Cut motifs/"
 file_list <- list.files(path = ".", recursive = TRUE, pattern = "\\.txt$", full.names = TRUE)
 
 View(file_list)
@@ -37,7 +37,7 @@ library(tidyverse)
 #EXTRACT ALL THE duplicated MOTIFS FROM MOTIFS_DF
 
 duplicated_motifs <- motifs_df[duplicated(motifs_df$Locus, motifs_df$matched_sequence) | duplicated(motifs_df$Locus, motifs_df$matched_sequence,
-                                                                               fromLast = TRUE),]
+                                                                                                    fromLast = TRUE),]
 
 #Extract unique copies of each duplicate
 unique_copy <- unique(duplicated_motifs)
@@ -60,15 +60,21 @@ dataframe2fas(unique_motifs_locus_matched_seq, file = "unique_motifs_locus_match
 
 
 ##SUBSET THE UNIQUE COPIES OF MOTIFS INTO IR1 AND IR2
-IR1_v1 <- subset(unique_copy, grepl("^TCAAA",unique_copy$matched_sequence))
+IR1_v1 <- subset(unique_copy_exp, grepl("^TCAAA",unique_copy_exp$matched_sequence))
 IR1_v1
-IR1_v2 <- subset(unique_copy, grepl("TGA$",unique_copy$matched_sequence))
+IR1_v2 <- subset(unique_copy_exp, grepl("TGA$",unique_copy_exp$matched_sequence))
 IR1_v2
-              
-IR2_v1 <- subset(unique_copy, grepl("^TCGA",unique_copy$matched_sequence))
+
+IR2_v1 <- subset(unique_copy_exp, grepl("^TCGA",unique_copy_exp$matched_sequence))
 IR2_v1
-IR2_v2 <- subset(unique_copy, grepl("CGA$",unique_copy$matched_sequence))
+IR2_v2 <- subset(unique_copy_exp, grepl("CGA$",unique_copy_exp$matched_sequence))
 IR2_v2
+
+## Unique IRs
+unique_IR1 <- unique(IR1_v1)
+unique_IR1
+
+
 
 #combine the subsets
 IR1 <- merge(IR1_v1, IR1_v2, all=TRUE, sort=TRUE)
@@ -83,5 +89,7 @@ IR2
 IR1_fasta <- select(IR1, 1,4)
 IR2_fasta <- select(IR2, 1,4)
 library(seqRFLP)
-dataframe2fas(IR1_fasta, file = "IR1.fasta")
-dataframe2fas(IR2_fasta, file = "IR2.fasta")
+dataframe2fas(IR1_fasta, file = "combined_IR1.fasta")
+dataframe2fas(IR2_fasta, file = "combined_IR2.fasta")
+
+
