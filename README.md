@@ -1,4 +1,6 @@
-# Attention GitHub Users
+# Moizle Ocariza, BSc Biochemistry (Honours)
+
+### Attention GitHub Users
 #### This repository contains Moizle Ocariza's raw results, sequences and R scripts used in completing her BSc Honours Thesis. 
 
 
