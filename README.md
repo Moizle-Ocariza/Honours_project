@@ -26,4 +26,6 @@ This document contains the amino acid sequences of the proteins found homologous
 
 ```Motifs from homologues``` contains raw motifs found in the Pseudomonas species.
 
-```Motifs.R``` contains the script used to process the raw motifs found using RSAT, SFM, and FIMO. 
+```Motifs.R``` contains the script used to process the raw motifs found using RSAT, SFM, and FIMO. Files required are stored in the ```Rscript files``` folder.
+
+```FIMO intergenic scan``` contains the inverted repeats identified by FIMO in the PAO1 intergenic regions. These are the raw results.
