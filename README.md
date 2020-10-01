@@ -1,5 +1,5 @@
-# Honours_project
-#### This repository contains Moizle Ocariza's raw results, sequences and R scripts used in completing her BSc Honours Thesis
+# Attention GitHub Users
+#### This repository contains Moizle Ocariza's raw results, sequences and R scripts used in completing her BSc Honours Thesis. 
 
 
 ## Supplementary data
