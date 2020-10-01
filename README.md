@@ -18,6 +18,9 @@ This document contains the amino acid sequences of the proteins found homologous
 
 ```NfxB_relatives.fasta``` contains the amino acid sequences of the NfxB homologues found.
 
+
+#### Motif Scanning
+
 ```Shuffled PAO1 intergenic region``` contains the shuffled sequences used as a control for PatScan.
 
 ```PatScan_Raw_Results``` contains the raw motifs found using the different  query patterns.
