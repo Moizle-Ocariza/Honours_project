@@ -26,6 +26,10 @@
 #### Whole Genome Sequences
 ```Assembly``` contains the whole genome sequences of the clinical isolates used in this study. These WGS were assembled in the Lamont Laboratory.
 
+#### gyrA_nfxB_PA3491 mutants
+```gyrA_nfxB_PA3491 mutants``` is a folder which contains the primer-specific PAO1 sequences. 
+```gyrA_PA3491_validation``` is a sequencing chromatogram and sequence alignment for validating the engineered _gyrA_ and PA3491 mutations.
+
 
 ### Motif Scanning
 
