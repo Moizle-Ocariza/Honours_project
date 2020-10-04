@@ -1,6 +1,6 @@
 # Moizle Ocariza, BSc Biochemistry (Honours)
 
-#### This repository contains Moizle Ocariza's raw results, sequences and R scripts used in completing her BSc Honours Thesis at the University of Otago, Dunedin New Zealand. 
+#### This repository contains a portion Moizle Ocariza's raw results, sequences and R scripts used in completing her BSc Honours Thesis at the University of Otago, Dunedin New Zealand. 
 
 
 ## Supplementary data
