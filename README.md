@@ -24,6 +24,9 @@
 
 ```16S``` and ```23S``` sequences were both taken from IMG and used for phylogenetic tree building.
 
+#### Whole Genome Sequences
+```Assembly``` contains the whole genome sequences of the clinical isolates used in this study. These WGS were assembled in the Lamont Laboratory.
+
 
 ### Motif Scanning
 
