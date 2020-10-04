@@ -45,3 +45,7 @@
 ```FIMO intergenic scan``` and ```PatScan raw results``` contain the inverted repeats identified by FIMO and PatScan in the PAO1 intergenic regions. These are the raw results.
 
 ```Putative binding sites full``` contains an Excel document with all the inverted repeats identified by FIMO and PatScan that had p- and q-values equal or less than to 1E-4 and mexCD region, and those that flank genes involve in efflux and regulation.
+
+#### Phylogenetic trees building
+
+```16S and 23S Tree Data``` contains the tree files generated in Clustal Omega. 
